@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Blue-Health-View"
+    }
+  },
+  "defaultProject": "Blue-Health-View",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }
