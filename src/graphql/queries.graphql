@@ -1,0 +1,112 @@
+# this is an auto generated file. This will be overwritten
+query GetAccount($id: ID!) {
+  getAccount(id: $id) {
+    id
+    name
+    patients {
+      items {
+        id
+        title
+        accountID
+      }
+      nextToken
+    }
+  }
+}
+query ListAccounts(
+  $filter: ModelAccountFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listAccounts(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      name
+      patients {
+        nextToken
+      }
+    }
+    nextToken
+  }
+}
+query GetPatient($id: ID!) {
+  getPatient(id: $id) {
+    id
+    title
+    accountID
+    account {
+      id
+      name
+      patients {
+        nextToken
+      }
+    }
+    comments {
+      items {
+        id
+        patientID
+        notes
+      }
+      nextToken
+    }
+  }
+}
+query ListPatients(
+  $filter: ModelPatientFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listPatients(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      title
+      accountID
+      account {
+        id
+        name
+      }
+      comments {
+        nextToken
+      }
+    }
+    nextToken
+  }
+}
+query GetAppointment($id: ID!) {
+  getAppointment(id: $id) {
+    id
+    patientID
+    patient {
+      id
+      title
+      accountID
+      account {
+        id
+        name
+      }
+      comments {
+        nextToken
+      }
+    }
+    notes
+  }
+}
+query ListAppointments(
+  $filter: ModelAppointmentFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listAppointments(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      patientID
+      patient {
+        id
+        title
+        accountID
+      }
+      notes
+    }
+    nextToken
+  }
+}
