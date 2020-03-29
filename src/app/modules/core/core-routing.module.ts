@@ -9,7 +9,7 @@ import { RegisterComponent } from 'src/app/components/register/register.componen
 
 
 const routes: Routes = [
-    { path: '', redirectTo: 'appointments', pathMatch: 'full' },
+    { path: '', redirectTo: 'login', pathMatch: 'full' },
     { path: 'appointments', component: AppointmentsComponent },
     { path: 'appointments/:id', component: AppointmentInstanceComponent },
     { path: 'appointmentsFeedback/:id', component: AppointmentFeedbackComponent },
