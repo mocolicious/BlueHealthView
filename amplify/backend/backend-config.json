@@ -1,0 +1,10 @@
+{
+	"auth": {
+		"bluehealthviewc68da31a": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false
+		}
+	}
+}

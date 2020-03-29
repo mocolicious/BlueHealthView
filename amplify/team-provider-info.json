@@ -1,0 +1,20 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-blue-health-view-dev-204707-authRole",
+            "UnauthRoleArn": "arn:aws:iam::144504656881:role/amplify-blue-health-view-dev-204707-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::144504656881:role/amplify-blue-health-view-dev-204707-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-blue-health-view-dev-204707-deployment",
+            "UnauthRoleName": "amplify-blue-health-view-dev-204707-unauthRole",
+            "StackName": "amplify-blue-health-view-dev-204707",
+            "StackId": "arn:aws:cloudformation:us-east-1:144504656881:stack/amplify-blue-health-view-dev-204707/34a3e710-715f-11ea-bab5-0a3bc12b2732",
+            "AmplifyAppId": "d2hu6zuqjn9j6q"
+        },
+        "categories": {
+            "auth": {
+                "bluehealthviewc68da31a": {}
+            }
+        }
+    }
+}
