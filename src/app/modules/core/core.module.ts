@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CoreRoutingModule } from './core-routing.module';
-import { SharedModule } from '../shared/shared.module';
 import { AppointmentsComponent } from 'src/app/components/appointments/appointments.component';
 import { AppointmentInstanceComponent } from 'src/app/components/appointment-instance/appointment-instance.component';
 import { AppointmentFeedbackComponent } from 'src/app/components/appointment-feedback/appointment-feedback.component';
@@ -28,7 +27,6 @@ import { FooterComponent } from 'src/app/components/layout/footer/footer.compone
   imports: [
     CommonModule,
     CoreRoutingModule,
-    SharedModule,
     FormsModule
   ],
   exports: [
